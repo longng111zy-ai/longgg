@@ -1,0 +1,527 @@
+<!DOCTYPE html><html class="h-full" lang="vi" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-surface-variant": "#4f4542",
+          "surface-container-high": "#ebe8e2",
+          "tertiary-fixed": "#ffddb2",
+          "on-error": "#ffffff",
+          "surface-tint": "#6c5b55",
+          "on-tertiary": "#ffffff",
+          "surface-container": "#f0eee8",
+          "primary-container": "#2b1e1a",
+          "surface-container-highest": "#e5e2dc",
+          "secondary-fixed": "#ffdbce",
+          "inverse-on-surface": "#f3f0ea",
+          "surface-bright": "#fcf9f3",
+          "inverse-primary": "#d8c2bb",
+          "on-secondary-fixed-variant": "#773214",
+          "surface-container-low": "#f6f3ed",
+          "on-primary-fixed": "#251915",
+          "on-background": "#1c1c18",
+          "primary-fixed": "#f5ddd7",
+          "surface-container-lowest": "#ffffff",
+          "secondary-container": "#ff9d77",
+          "on-secondary-container": "#783215",
+          "tertiary": "#110800",
+          "primary-fixed-dim": "#d8c2bb",
+          "secondary": "#954829",
+          "surface-variant": "#e5e2dc",
+          "surface": "#fcf9f3",
+          "tertiary-container": "#301d00",
+          "outline-variant": "#d2c3bf",
+          "on-secondary": "#ffffff",
+          "on-primary": "#ffffff",
+          "on-error-container": "#93000a",
+          "on-tertiary-fixed": "#291800",
+          "surface-dim": "#dcdad4",
+          "primary": "#120805",
+          "on-primary-fixed-variant": "#53433e",
+          "on-tertiary-fixed-variant": "#60400a",
+          "on-primary-container": "#98847e",
+          "error": "#ba1a1a",
+          "outline": "#807471",
+          "background": "#fcf9f3",
+          "on-tertiary-container": "#aa8146",
+          "tertiary-fixed-dim": "#eebf7e",
+          "inverse-surface": "#31312d",
+          "secondary-fixed-dim": "#ffb59a",
+          "error-container": "#ffdad6",
+          "on-surface": "#1c1c18",
+          "on-secondary-fixed": "#380d00"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "gutter-lg": "3rem",
+          "space-md": "1rem",
+          "margin": "3rem",
+          "gutter": "2rem",
+          "margin-lg": "5rem",
+          "space-sm": "0.5rem",
+          "margin-sm": "1.25rem",
+          "space-lg": "1.75rem",
+          "space-xs": "0.25rem",
+          "gutter-sm": "1rem",
+          "space-xl": "3rem"
+        },
+        "fontFamily": {
+          "display-lg": [
+            "Playfair Display"
+          ],
+          "title-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-lg": [
+            "Playfair Display"
+          ],
+          "headline-lg-mobile": [
+            "Playfair Display"
+          ],
+          "title-md": [
+            "Plus Jakarta Sans"
+          ],
+          "label-md": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-md": [
+            "Playfair Display"
+          ],
+          "body-lg": [
+            "Plus Jakarta Sans"
+          ],
+          "headline-sm": [
+            "Playfair Display"
+          ],
+          "body-md": [
+            "Plus Jakarta Sans"
+          ],
+          "body-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "label-sm": [
+            "Plus Jakarta Sans"
+          ],
+          "display-lg-mobile": [
+            "Playfair Display"
+          ]
+        },
+        "fontSize": {
+          "display-lg": [
+            "56px",
+            {
+              "lineHeight": "64px",
+              "letterSpacing": "-0.02em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-lg": [
+            "20px",
+            {
+              "lineHeight": "28px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-lg": [
+            "40px",
+            {
+              "lineHeight": "48px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-lg-mobile": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "title-md": [
+            "16px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "600"
+            }
+          ],
+          "label-md": [
+            "13px",
+            {
+              "lineHeight": "18px",
+              "letterSpacing": "0.06em",
+              "fontWeight": "600"
+            }
+          ],
+          "headline-md": [
+            "28px",
+            {
+              "lineHeight": "36px",
+              "letterSpacing": "0em",
+              "fontWeight": "500"
+            }
+          ],
+          "body-lg": [
+            "18px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "headline-sm": [
+            "22px",
+            {
+              "lineHeight": "30px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "600"
+            }
+          ],
+          "body-md": [
+            "15px",
+            {
+              "lineHeight": "24px",
+              "letterSpacing": "0em",
+              "fontWeight": "400"
+            }
+          ],
+          "body-sm": [
+            "13px",
+            {
+              "lineHeight": "20px",
+              "letterSpacing": "0.01em",
+              "fontWeight": "400"
+            }
+          ],
+          "label-sm": [
+            "11px",
+            {
+              "lineHeight": "16px",
+              "letterSpacing": "0.08em",
+              "fontWeight": "600"
+            }
+          ],
+          "display-lg-mobile": [
+            "36px",
+            {
+              "lineHeight": "44px",
+              "letterSpacing": "-0.01em",
+              "fontWeight": "400"
+            }
+          ]
+        }
+      },
+    },
+  }</script></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col"><header class="fixed top-0 inset-x-0 z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(43,30,26,0.04)]"><div class="w-full bg-primary-container text-on-primary-fixed-variant py-2 px-margin-sm md:px-margin text-center flex items-center justify-center"><p class="font-label-sm text-label-sm tracking-widest text-primary-fixed uppercase">Miễn phí đóng gói quà tặng thủ công &amp; Vận chuyển toàn quốc cho đơn từ 1.000.000đ</p></div><div class="h-20 max-w-[1440px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-md"><img alt="An Nhiên Artisanal Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UEM6eeg9eS02tKD0D3nkERhXxM8kYh1RhxpeAfDhIyxee_LnKEnQNs53tYV21tg7Roz0xbVhu-UBEB6X3uNbk0-_eSZDUJiODqp3UX-Jhdc8-TmpQmXIf25Zb9KdvwwRr9PlZZluZF-nukRSU6o66gGFnDdQockwZfazmQc8C0Is1wA2U3jkBhQSCL_2Kw2oSAXXJxO2JgG9tMWFwp8LtmsRaqa8t1SayTdbxwlM2zzyanJjcyQKsh1w"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">An Nhiên</span><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Artisanal Atelier</span></div></div><nav class="hidden xl:flex items-center gap-space-lg" data-active-classes="text-secondary font-semibold"><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="trang-chu" href="#">Trang Chủ</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="bo-suu-tap" href="#">Bộ Sưu Tập</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="nghe-nhan-di-san" href="#">Nghệ Nhân &amp; Di Sản</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="cau-chuyen" href="#">Câu Chuyện</a><a class="font-title-md text-title-md text-on-surface-variant hover:text-on-surface transition-colors py-1" data-path="lien-he" href="#">Liên Hệ</a></nav><div class="flex items-center gap-space-md"><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 rounded bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-outline text-[18px]">payments</span><span class="">VND (₫)</span></div><button aria-label="Tìm kiếm" class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined">search</span></button><button aria-label="Danh sách yêu thích" class="p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined">favorite</span></button><a aria-label="Giỏ hàng" class="relative p-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="gio-hang" href="#"><span class="material-symbols-outlined">shopping_bag</span><span class="absolute top-0 right-0 w-4 h-4 rounded-full bg-secondary text-on-secondary font-label-sm text-[10px] flex items-center justify-center">3</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-28 bg-surface flex-grow"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg pt-space-md pb-space-xl"><div class="relative w-full min-h-[580px] lg:h-[620px] rounded overflow-hidden shadow-sm flex items-center"><img alt="Bộ ấm chén gốm mộc mạc cao cấp" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1VzGtcreNQ_ecfQ9TuGWRMjG-kohl09VxINRGErssuHCyZHicnE7qtT2MYemrpx1VbJZs9U7dVlDukpCwOByAGRhILff_UIo7eH5T1qXxGJAut_H9sxz3dvkkKDJETZq5S9WBLj7ENsjmiVkiCxG47H6GZ8zDbHCrMIPKdJe3WsiLyEr8vzWuNKGdlYpX1TtcsVVUlQVlu6HdblsuA98USEkMN068UlHIhROqmHwoNu0SkqdQuMXR3Qt7k" style="mask-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.15) 30%, rgba(0, 0, 0, 0.7) 65%, black 100%);"><div class="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent"></div><div class="relative z-10 w-full p-space-lg md:p-space-xl flex flex-col justify-between h-full"><div class="max-w-2xl flex flex-col space-y-space-md pt-space-sm"><div class="inline-flex items-center gap-space-xs text-secondary-fixed tracking-widest uppercase font-label-sm text-label-sm"><span class="w-6 h-[1px] bg-secondary-fixed inline-block"></span><span class="">Tuyển Tập Mỹ Nghệ Giới Hạn</span></div><h1 class="font-headline-lg text-headline-lg lg:text-display-lg text-surface-bright tracking-tight leading-tight">Lưu Giữ Hồn Quê Trong Từng Đường Nét Thủ Công</h1><p class="font-body-lg text-body-lg text-surface-container-high/90 font-light max-w-xl">Bộ sưu tập quà lưu niệm mỹ nghệ Việt Nam được chế tác thủ công bởi các nghệ nhân di sản. Mỗi vật phẩm là một câu chuyện văn hóa trầm mặc, tinh tế và trường tồn với thời gian.</p><div class="pt-space-sm flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm"><a class="px-space-lg py-3.5 bg-surface-bright text-primary font-title-md text-title-md rounded hover:bg-secondary-fixed transition-all duration-300 text-center shadow-sm hover:shadow-md" data-path="bo-suu-tap" href="#">Khám Phá Bộ Sưu Tập Mùa Thu</a><a class="px-space-lg py-3.5 border border-surface-bright/70 text-surface-bright font-title-md text-title-md rounded hover:bg-surface-bright/10 transition-all duration-300 text-center backdrop-blur-sm" data-path="nghe-nhan-di-san" href="#">Xem Câu Chuyện Nghệ Nhân</a></div><div class="grid grid-cols-3 gap-space-sm pt-space-lg border-t border-surface-container-high/30 max-w-lg"><div><div class="font-headline-md text-headline-md text-secondary-fixed font-semibold">100%</div><div class="font-label-sm text-label-sm text-surface-container-high/80 tracking-wider uppercase mt-1">Thủ Công Tự Nhiên</div></div><div><div class="font-headline-md text-headline-md text-secondary-fixed font-semibold">12+</div><div class="font-label-sm text-label-sm text-surface-container-high/80 tracking-wider uppercase mt-1">Làng Nghề Di Sản</div></div><div><div class="font-headline-md text-headline-md text-secondary-fixed font-semibold">Bespoke</div><div class="font-label-sm text-label-sm text-surface-container-high/80 tracking-wider uppercase mt-1">Khắc Tên Riêng Biệt</div></div></div></div><div class="self-end mt-space-md"><div class="backdrop-blur-md bg-black/40 border border-white/10 px-space-md py-space-xs rounded shadow-sm flex items-center gap-space-xs"><span class="material-symbols-outlined text-secondary-fixed text-[18px]">verified</span><span class="font-label-sm text-label-sm tracking-wide text-surface-bright">Tác phẩm Trà Đạo Sa Khơi • Nghệ Nhân Bát Tràng</span></div></div></div></div></section>
+<!-- 2. DANH MỤC LƯU NIỆM NỔI BẬT (Curated Collections) -->
+<section class="w-full bg-surface-container-low/60 py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg">
+<div>
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-1">Tinh Hoa Chế Tác</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Bộ Sưu Tập Giới Hạn</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">Chắt lọc từ những tinh hoa văn hóa truyền thống ngàn năm</p>
+</div>
+<a class="mt-4 md:mt-0 inline-flex items-center gap-space-xs font-title-md text-title-md text-secondary hover:text-primary transition-colors group" data-path="bo-suu-tap" href="#">
+<span class="">Xem tất cả tác phẩm</span>
+<span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+<!-- 3-Column Products Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Item 1: Sơn Mài -->
+<article class="group bg-surface-container-lowest rounded overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden bg-surface-container aspect-[4/3]">
+<img alt="Hộp trang sức khảm xà cừ sơn mài" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9jXoxG9Qh6YrUJWBHyXfUJR-5LsYnzGgWTH-7GDPyrusiZZ1_dOEsMOKaQQmAlX3py_h5gcNxQ6cnhL2SKrg5qZ-BPCtbcS5p_6BqtB_ImMZvOqpVeSg0HRAEKSrxBUE4yKZU8JEvH34EV8sZM8agJKTFuuRAp32GCNti7MLJvXbNIoZJanKN_m9qFxR0B0atKOu-9eF5S67svwDGlNiFzaepVpnM36im-hNd7IewyjOAMwJzjIBx">
+<span class="absolute top-space-sm left-space-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded tracking-wider uppercase">
+              Di Sản Sơn Mài
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-baseline justify-between gap-space-xs mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                  Hộp Khảm Xà Cừ "Dấu Xưa"
+                </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                Chế tác từ gỗ mun tự nhiên, dát xà cừ vân mây 12 lớp đánh bóng thủ công qua 90 ngày.
+              </p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-title-lg text-title-lg text-secondary font-semibold">2.850.000₫</span>
+<button aria-label="Thêm Hộp Dấu Xưa vào giỏ" class="p-2 text-primary hover:text-secondary transition-colors rounded-full hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[22px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 2: Gốm Mộc -->
+<article class="group bg-surface-container-lowest rounded overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden bg-surface-container aspect-[4/3]">
+<img alt="Gốm mộc vuốt tay nghệ thuật" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOvbx29dbyIjvastC9FwJC0EKQOUqZclGy4yCIjSe0VbrnNo_TzP3idHNhOwhio1kIbYmsPUv2eKs_TqO5hwtk9yGyo-vWqCtXlzBSRx2QPdNt7rmC3eKt7JCJyeczHLLBPCuEiGRCvBHz2b7FqMwrblD1FrE-yfvXTxFp296SO76xP-yI8Bx_19rmRMpvnBsAUk042efKsNKSmMGb-hAf7xvMnHxhtfAj7La57or3qwP9KfmQxobz">
+<span class="absolute top-space-sm left-space-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded tracking-wider uppercase">
+              Gốm Độc Bản
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-baseline justify-between gap-space-xs mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                  Bình Gốm Thô "Phù Sa"
+                </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                Men tro tự nhiên nung củi nhiệt độ cao 1300°C, bề mặt vân cát nguyên bản mộc mạc và tĩnh tại.
+              </p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-title-lg text-title-lg text-secondary font-semibold">1.450.000₫</span>
+<button aria-label="Thêm Bình Gốm Phù Sa vào giỏ" class="p-2 text-primary hover:text-secondary transition-colors rounded-full hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[22px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 3: Trầm Hương -->
+<article class="group bg-surface-container-lowest rounded overflow-hidden shadow-sm hover:shadow-md transition-all duration-300 flex flex-col">
+<div class="relative overflow-hidden bg-surface-container aspect-[4/3]">
+<img alt="Bộ đốt trầm hương tinh tế" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBawDkd__9baB508CdodPyZ_5Y6WslbvGTUHFl6LZj43-bohfzddf5TN-5lxL4qNbcknEZJJNTpF7QDUagf7eHIjzG4-txWgJZLl4D7ACMRIPn-QsQRDTxPFPphP2DGCIByCvb1-YhH3u_LxPk8FLmVzTCjNI8Beegjmz0TjiXC5qCGpesqkgsk2HUx8M2ugp7ABlACj_yM8xAjmkSmhLz1lwri1AG_IDhYjEwY4I6wwLv6Wy6cxVqS">
+<span class="absolute top-space-sm left-space-sm bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm px-space-sm py-0.5 rounded tracking-wider uppercase">
+              Trầm Hương Tự Nhiên
+            </span>
+</div>
+<div class="p-space-md flex flex-col flex-grow justify-between">
+<div>
+<div class="flex items-baseline justify-between gap-space-xs mb-1">
+<h3 class="font-headline-sm text-headline-sm text-primary group-hover:text-secondary transition-colors">
+                  Bộ Lư Xông Trầm "Tĩnh Tại"
+                </h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mb-space-sm">
+                Đất sét tử sa kết hợp đồng thau đúc hoa sen, đi kèm trầm nụ tự nhiên rừng Tiên Phước thượng hạng.
+              </p>
+</div>
+<div class="pt-space-xs border-t border-surface-container flex items-center justify-between">
+<span class="font-title-lg text-title-lg text-secondary font-semibold">3.200.000₫</span>
+<button aria-label="Thêm Lư Xông Trầm Tĩnh Tại vào giỏ" class="p-2 text-primary hover:text-secondary transition-colors rounded-full hover:bg-surface-container" type="button">
+<span class="material-symbols-outlined text-[22px]">add_shopping_cart</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- 3. TRIẾT LÝ NGHỆ NHÂN & GIÁ TRỊ VĂN HÓA (Editorial Narrative Banner) -->
+<section class="w-full bg-primary-container text-surface-container-lowest py-space-xl">
+<div class="max-w-[1440px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg">
+<div class="max-w-3xl mx-auto text-center mb-space-xl">
+<span class="material-symbols-outlined text-secondary-container text-4xl mb-space-xs">auto_awesome</span>
+<blockquote class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg font-normal leading-relaxed italic text-surface-bright">
+          "Mỗi món quà lưu niệm không chỉ là một kỷ vật ghé thăm, mà là cầu nối gìn giữ tâm hồn và bàn tay khéo léo của người thợ Việt qua nhiều thế hệ."
+        </blockquote>
+<div class="w-16 h-[1px] bg-secondary-container/40 mx-auto mt-space-md"></div>
+</div>
+<!-- 3 Cam kết cốt lõi -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter pt-space-xs">
+<div class="flex flex-col items-center text-center p-space-md rounded bg-surface-container-highest/5 hover:bg-surface-container-highest/10 transition-colors">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest/10 flex items-center justify-center text-secondary-container mb-space-md">
+<span class="material-symbols-outlined text-3xl">nature</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-surface-bright mb-2">Chất Liệu Bản Địa Chọn Lọc</h4>
+<p class="font-body-md text-body-md text-on-primary-container font-light">
+            Gỗ mun tự nhiên, tơ tằm dệt tay Bảo Lộc và men khoáng thô tự nhiên không hóa chất công nghiệp.
+          </p>
+</div>
+<div class="flex flex-col items-center text-center p-space-md rounded bg-surface-container-highest/5 hover:bg-surface-container-highest/10 transition-colors">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest/10 flex items-center justify-center text-secondary-container mb-space-md">
+<span class="material-symbols-outlined text-3xl">stylus_note</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-surface-bright mb-2">Cá Nhân Hóa Đẳng Cấp</h4>
+<p class="font-body-md text-body-md text-on-primary-container font-light">
+            Khắc tên, lời tri ân trang trọng bằng chữ thư pháp trên thiệp giấy dó Bắc Ninh và dây lụa tơ tằm thêu tay.
+          </p>
+</div>
+<div class="flex flex-col items-center text-center p-space-md rounded bg-surface-container-highest/5 hover:bg-surface-container-highest/10 transition-colors">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest/10 flex items-center justify-center text-secondary-container mb-space-md">
+<span class="material-symbols-outlined text-3xl">redeem</span>
+</div>
+<h4 class="font-title-lg text-title-lg text-surface-bright mb-2">Hộp Quà Sang Trọng</h4>
+<p class="font-body-md text-body-md text-on-primary-container font-light">
+            Mỗi vật phẩm được đóng gói trong hộp bồi vải gai mộc mạc, lót lụa vàng và kèm chứng thư bảo chứng xuất xứ.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. BỘ QUÀ TẶNG DOANH NGHIỆP & DU KHÁCH VIP (Bespoke Gift Sets) -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-xl">
+<div class="flex flex-col lg:flex-row gap-gutter-lg items-center">
+<!-- Story Presentation Side -->
+<div class="lg:w-5/12 flex flex-col space-y-space-md">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest">Dịch Vụ Quà Tặng Doanh Nghiệp</span>
+<h2 class="font-headline-lg text-headline-lg text-primary tracking-tight">
+          Giải Pháp Quà Tặng Đối Ngoại &amp; Du Khách VIP
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+          Được tin chọn bởi các tập đoàn đa quốc gia và các khách sạn nghỉ dưỡng 5 sao. Chúng tôi tư vấn, thiết kế và may đo bộ quà tặng ngoại giao mang đậm phong vị bản sắc Việt, ghi dấu ấn sâu sắc trong lòng đối tác.
+        </p>
+<ul class="space-y-space-xs font-body-md text-body-md text-on-surface pt-space-xs">
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="">Khắc chìm huy hiệu và thông điệp riêng theo chuẩn Brand Guideline</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="">Đầy đủ chứng thư văn hóa song ngữ (Anh - Việt / Pháp - Việt)</span>
+</li>
+<li class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">check_circle</span>
+<span class="">Vận chuyển bảo an toàn cầu có bảo hiểm hiện vật</span>
+</li>
+</ul>
+<div class="pt-space-sm">
+<button class="px-space-lg py-3.5 bg-primary-container text-surface-container-lowest font-title-md text-title-md rounded hover:bg-secondary transition-colors inline-flex items-center gap-space-xs" type="button">
+<span class="">Liên Hệ Nhận Catalogue Doanh Nghiệp</span>
+<span class="material-symbols-outlined text-[18px]">east</span>
+</button>
+</div>
+</div>
+<!-- Curated Sets Grid Side -->
+<div class="lg:w-7/12 w-full grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<!-- Set 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm hover:shadow-md transition-shadow">
+<div class="h-44 rounded bg-surface-container overflow-hidden mb-space-sm">
+<img alt="Hộp quà ký ức phố cổ sang trọng" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA9jXoxG9Qh6YrUJWBHyXfUJR-5LsYnzGgWTH-7GDPyrusiZZ1_dOEsMOKaQQmAlX3py_h5gcNxQ6cnhL2SKrg5qZ-BPCtbcS5p_6BqtB_ImMZvOqpVeSg0HRAEKSrxBUE4yKZU8JEvH34EV8sZM8agJKTFuuRAp32GCNti7MLJvXbNIoZJanKN_m9qFxR0B0atKOu-9eF5S67svwDGlNiFzaepVpnM36im-hNd7IewyjOAMwJzjIBx">
+</div>
+<span class="text-secondary font-label-sm text-label-sm uppercase font-semibold">Bộ Quà Ngoại Giao</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Ký Ức Phố Cổ</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Hộp sơn mài khắc cảnh phố Hội, trà Shan Tuyết cổ thụ &amp; phin cà phê đồng gò thủ công.</p>
+</div>
+<!-- Set 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded shadow-sm hover:shadow-md transition-shadow">
+<div class="h-44 rounded bg-surface-container overflow-hidden mb-space-sm">
+<img alt="Hộp quà hương an yên" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBawDkd__9baB508CdodPyZ_5Y6WslbvGTUHFl6LZj43-bohfzddf5TN-5lxL4qNbcknEZJJNTpF7QDUagf7eHIjzG4-txWgJZLl4D7ACMRIPn-QsQRDTxPFPphP2DGCIByCvb1-YhH3u_LxPk8FLmVzTCjNI8Beegjmz0TjiXC5qCGpesqkgsk2HUx8M2ugp7ABlACj_yM8xAjmkSmhLz1lwri1AG_IDhYjEwY4I6wwLv6Wy6cxVqS">
+</div>
+<span class="text-secondary font-label-sm text-label-sm uppercase font-semibold">Bộ Quà Thư Thái</span>
+<h4 class="font-headline-sm text-headline-sm text-primary mt-1">Trà &amp; Hương An Yên</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Lư đồng trầm hương thủ công, ống trầm tự nhiên và bình trà gốm mộc vuốt tay nghệ thuật.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. ĐÁNH GIÁ TỪ KHÁCH HÀNG & DU KHÁCH QUỐC TẾ (Reviews & Testimonials) -->
+<section class="w-full bg-surface-container-low/40 py-space-xl border-t border-outline-variant/30">
+<div class="max-w-[1440px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg">
+<div class="text-center max-w-2xl mx-auto mb-space-lg">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-widest block mb-1">Cảm Nhận Tri Kỷ</span>
+<h2 class="font-headline-lg text-headline-lg text-primary">Ký Ức Đọng Lại Sau Những Chuyến Đi</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Review 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex text-secondary gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Chiếc hộp sơn mài khảm xà cừ tôi mua tại An Nhiên đã trở thành tâm điểm bàn trà tại Paris. Mỗi chi tiết đều toát lên sự tỉ mỉ phi thường của người nghệ nhân Việt."
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-title-md text-title-md text-primary">
+              CL
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary">Claire Laurent</p>
+<p class="font-label-sm text-label-sm text-outline">Kiến trúc sư nội thất • Pháp</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex text-secondary gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Chúng tôi đã đặt 50 bộ quà tặng gốm Bát Tràng và trầm hương cho hội nghị đối tác cấp cao. Sự tinh tế trong khâu đóng gói bọc lụa thêu đã để lại ấn tượng rất sâu sắc."
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-title-md text-title-md text-primary">
+              TH
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary">Trần Hoàng Nam</p>
+<p class="font-label-sm text-label-sm text-outline">Giám Đốc Đối Ngoại • Lotus Capital</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded shadow-sm flex flex-col justify-between">
+<div class="space-y-space-sm">
+<div class="flex text-secondary gap-0.5">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: &quot;FILL&quot; 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+              "Hiếm có nơi nào truyền tải được câu chuyện đằng sau món đồ lưu niệm trọn vẹn như An Nhiên. Tấm thiệp giấy dó ghi tay tên người thợ khiến món quà có linh hồn thực sự."
+            </p>
+</div>
+<div class="pt-space-md mt-space-md border-t border-surface-container flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center font-title-md text-title-md text-primary">
+              MT
+            </div>
+<div>
+<p class="font-title-md text-title-md text-primary">Minh Thảo</p>
+<p class="font-label-sm text-label-sm text-outline">Nhà sưu tầm đồ thủ công • TP.HCM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. ATELIER VISIT & CONCIERGE CALLOUT -->
+<section class="w-full max-w-[1440px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg py-space-xl">
+<div class="relative bg-surface-container-high rounded p-space-lg md:p-space-xl overflow-hidden flex flex-col md:flex-row items-center justify-between gap-gutter">
+<div class="max-w-xl">
+<span class="text-secondary font-label-md text-label-md uppercase tracking-wider block mb-1">Trải Nghiệm Trực Tiếp</span>
+<h3 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-primary">Ghé Thăm Không Gian Trưng Bày An Nhiên</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Thưởng thức một chén trà mộc, chạm tay vào từng lớp men gốm và lắng nghe câu chuyện từ các nghệ nhân tại hai không gian Tràng Tiền (Hà Nội) &amp; Phố Cổ (Hội An).
+        </p>
+</div>
+<div class="flex-shrink-0 flex items-center gap-space-sm">
+<a class="px-space-lg py-3.5 bg-primary-container text-surface-container-lowest font-title-md text-title-md rounded hover:bg-secondary transition-colors text-center" data-path="lien-he" href="#">
+          Đặt Hẹn Thưởng Lãm Riêng
+        </a>
+</div>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl"><div class="max-w-[1440px] mx-auto px-margin-sm md:px-margin lg:px-margin-lg pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-gutter-lg pb-space-xl"><div class="lg:col-span-4 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md text-primary tracking-tight">An Nhiên</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">Gìn giữ và tôn vinh tinh hoa thủ công truyền thống Việt Nam qua lăng kính đương đại. Mỗi tác phẩm là một câu chuyện về văn hóa, chất liệu nguyên bản và bàn tay tài hoa của nghệ nhân di sản.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Facebook Atelier" class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a><a aria-label="Instagram Gallery" class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a aria-label="YouTube Heritage Stories" class="w-9 h-9 rounded bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">smart_display</span></a></div></div><div class="lg:col-span-3 flex flex-col gap-space-md"><span class="font-title-md text-title-md text-primary tracking-wide uppercase">Tuyển Tập Di Sản</span><ul class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><li class=""><a class="hover:text-secondary transition-colors" data-path="bo-suu-tap" href="#">Gốm sứ Bát Tràng cao cấp</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="bo-suu-tap" href="#">Sơn mài truyền thống trác tuyệt</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="bo-suu-tap" href="#">Trầm hương tự nhiên &amp; Trà đạo</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="bo-suu-tap" href="#">Lụa tơ tằm dệt tay Bảo Lộc</a></li><li class=""><a class="hover:text-secondary transition-colors" data-path="bo-suu-tap" href="#">Chế tác quà tặng doanh nghiệp</a></li></ul></div><div class="lg:col-span-2 flex flex-col gap-space-md"><span class="font-title-md text-title-md text-primary tracking-wide uppercase">Hệ Thống Không Gian</span><div class="flex flex-col gap-space-sm font-body-sm text-body-sm text-on-surface-variant"><div><p class="font-title-md text-title-md text-on-surface">Atelier Hà Nội</p><p class="">48 Phố Tràng Tiền, Quận Hoàn Kiếm, Hà Nội</p><p class="text-label-sm font-label-sm text-outline">09:00 - 21:00 hàng ngày</p></div><div class="pt-space-xs"><p class="font-title-md text-title-md text-on-surface">Gallery Hội An</p><p class="">108 Đường Nguyễn Thái Học, Phố cổ Hội An</p><p class="text-label-sm font-label-sm text-outline">08:30 - 21:30 hàng ngày</p></div></div></div><div class="lg:col-span-3 flex flex-col gap-space-md"><span class="font-title-md text-title-md text-primary tracking-wide uppercase">Đặc Quyền Hội Viên</span><p class="font-body-sm text-body-sm text-on-surface-variant">Đăng ký nhận tuyển tập tác phẩm giới hạn, lời mời triển lãm và những khảo cứu văn hóa thủ công định kỳ.</p><form class="flex flex-col gap-space-xs pt-space-xs"><input class="w-full px-space-md py-space-sm bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded outline-none focus:ring-1 focus:ring-secondary" placeholder="Địa chỉ thư điện tử..." type="email"><button class="w-full py-space-sm px-space-md bg-primary-container text-on-primary font-label-md text-label-md uppercase tracking-wider rounded hover:bg-secondary hover:text-on-secondary transition-colors" type="submit">Đăng Ký Bản Tin</button></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-outline"><p class="">© 2025 An Nhiên Artisanal Atelier. Bản quyền thuộc về Di Sản Thủ Công Việt.</p><div class="flex items-center gap-space-md font-label-sm text-label-sm"><a class="hover:text-on-surface transition-colors" data-path="chinh-sach" href="#">Chính Sách Bảo Hành</a><a class="hover:text-on-surface transition-colors" data-path="chinh-sach" href="#">Vận Chuyển Toàn Cầu</a><a class="hover:text-on-surface transition-colors" data-path="chinh-sach" href="#">Chứng Thư Nguyên Bản</a></div></div></div></footer>
+
+
+</body></html>
